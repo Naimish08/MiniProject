@@ -58,27 +58,53 @@ A high-performance computer vision system that combines YOLOv8 detection, ByteTr
 
     **Note**: Install PyTorch with CUDA support before installing other dependencies.
 
-- Create and activate a virtual environment:
+    === "Windows"
 
-    ```bash
-    python3.10 -m venv venv
-    source venv/bin/activate
-    pip install --upgrade pip
-    ```
+        - Create and activate a virtual environment:
 
-- Install PyTorch (with CUDA) — choose the command for your setup from the [official PyTorch installation page](https://pytorch.org/get-started/locally/)
+            ```bash
+            python -m venv venv
+            venv\Scripts\activate
+            pip install --upgrade pip
+            ```
 
-    Example for CUDA 13.0:
+        - Install PyTorch (with CUDA) — choose the command for your setup from the [official PyTorch installation page](https://pytorch.org/get-started/locally/)
 
-    ```bash
-    pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130
-    ```
+            Example for CUDA 13.0:
 
-- Install remaining dependencies:
+            ```bash
+            pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130
+            ```
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+        - Install remaining dependencies:
+
+            ```bash
+            pip install -r requirements.txt
+            ```
+
+    === "Linux"
+
+        - Create and activate a virtual environment:
+
+            ```bash
+            python3.10 -m venv venv
+            source venv/bin/activate
+            pip install --upgrade pip
+            ```
+
+        - Install PyTorch (with CUDA) — choose the command for your setup from the [official PyTorch installation page](https://pytorch.org/get-started/locally/)
+
+            Example for CUDA 13.0:
+
+            ```bash
+            pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130
+            ```
+
+        - Install remaining dependencies:
+
+            ```bash
+            pip install -r requirements.txt
+            ```
 
 4. **Download Models & TensorRT Engines**
 
